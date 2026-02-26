@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // --- VALIDĂRI ---
     if ($username === '' || strlen($username) < 3) {
-        $errors[] = "Username trebuie să aibă minim 3 caractere.";
+        $errors[] = "Username trebuie să aibă minim 3 caractere !!!.";
     }
 
     if ($email === '' || !is_valid_email_custom($email)) {
