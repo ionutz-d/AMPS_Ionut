@@ -676,7 +676,7 @@ if (isset($_GET["msg"])) $success = $_GET["msg"];
                 </div>
             </div>
 
-            <h3 class="section-title">Payment (Required)</h3>
+            <h3 class="section-title">Payment - (Required)</h3>
 
             <div class="modal-row">
                 <div class="form-group">
