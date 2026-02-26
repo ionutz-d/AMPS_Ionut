@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $field_errors['first_name'][] = "First name este obligatoriu.";
     } else {
         if (!is_valid_name($first_name)) {
-            $field_errors['first_name'][] = "Trebuie să conțină doar litere și să înceapă cu literă mare.";
+            $field_errors['first_name'][] = "Trebuie, să conțină doar litere și să înceapă cu literă mare.";
         }
     }
 
