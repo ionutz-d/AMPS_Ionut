@@ -1,0 +1,2241 @@
+/* -------------------------------------------------- */
+/*  FONT & BASE STYLE                                  */
+/* -------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f6f7;
+    color: #3f3f3f;
+}
+
+/* -------------------------------------------------- */
+/*  LOGIN PAGE                                         */
+/* -------------------------------------------------- */
+
+.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #003c46, #05b9a1);
+}
+
+.login-container {
+    width: 940px;
+    height: 590px;
+    background: #ffffff;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+/* -------------------------------------------------- */
+/*  LOGIN LEFT - PREMIUM MEDICAL DESIGN               */
+/* -------------------------------------------------- */
+
+.login-left {
+    width: 50%;
+    padding: 60px 50px;
+    background: linear-gradient(180deg, #003c46, #004f59, #006b70);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ornament medical rotund */
+.login-left::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    top: -60px;
+    right: -80px;
+    filter: blur(2px);
+}
+
+.login-left::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+    bottom: -40px;
+    left: -60px;
+    filter: blur(2px);
+}
+
+/* text styling */
+.login-left h2 {
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.login-left h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #05b9a1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* linie decorativă sub titlu */
+.login-left .title-line {
+    width: 70px;
+    height: 4px;
+    background: #05b9a1;
+    border-radius: 2px;
+    margin: 8px 0 18px 0;
+}
+
+.login-left p.subtitle {
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.5;
+    margin-top: 5px;
+    max-width: 320px;
+}
+
+
+.login-right {
+    width: 50%;
+    padding: 30px;
+}
+
+.login-logo {
+    width: 98px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #003c46;
+}
+
+.login-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e3e3e3;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.input:focus {
+    border-color: #05b9a1;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #05b9a1;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #008d78;
+}
+
+.error-box {
+    width: 100%;
+    padding: 10px;
+    background: #ffdfdf;
+    border-left: 5px solid #e63939;
+    color: #b80000;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+/* -------------------------------------------------- */
+/*     SIDEBAR PREMIUM ELEGANT                        */
+/* -------------------------------------------------- */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #003c46, #024f59);
+    padding-top: 10px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.25);
+    overflow-y: auto;
+}
+
+/* LOGO */
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sidebar-logo img {
+    margin-top: 5px;
+    width: 75px;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
+}
+
+.sidebar-logo h2 {
+    color: #05b9a1;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* MENU LIST */
+.sidebar-menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 2px;
+}
+
+/* LINKS */
+.sidebar-menu li a {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-left: 4px solid transparent;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+.sidebar-menu li a:hover {
+    background: rgba(255,255,255,0.07);
+    border-left: 4px solid #05b9a1;
+    padding-left: 32px;
+}
+
+/* ACTIVE PAGE EFFECT - foarte modern */
+.sidebar-menu li a.active {
+    background: linear-gradient(90deg, #05b9a17e, #05b9a12f);
+    border-left: 4px solid #05b9a1;
+    font-weight: 600;
+    padding-left: 32px;
+    box-shadow: inset 0 0 8px rgba(5,185,161,0.35);
+}
+
+/* LOGOUT */
+.logout-wrap {
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.sidebar-menu li a.logout {
+    background: #d9534f;
+    border-left-color: #d9534f;
+    font-weight: 600;
+}
+
+.sidebar-menu li a.logout:hover {
+    background: #b5302d;
+}
+
+
+
+
+/* -------------------------------------------------- */
+/*  MAIN CONTENT                                       */
+/* -------------------------------------------------- */
+
+.main-content {
+    margin-left: 240px;
+    padding: 0;
+}
+
+
+/* -------------------------------------------------- */
+/* HEADER PREMIUM MEDICAL                             */
+/* -------------------------------------------------- */
+
+.top-header {
+    height: 90px;
+    background: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    font-size: 26px;
+    color: #003c46;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.welcome-text {
+    font-size: 15px;
+    color: #05b9a1;
+    margin-top: 3px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.date-box {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.user-box:hover {
+    background: rgba(5,185,161,0.15);
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #05b9a1;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user-role {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+/* -------------------------------------------------- */
+/*  CONTENT                                            */
+/* -------------------------------------------------- */
+
+.content-box {
+    padding: 30px;
+}
+
+.content-box h2 {
+    font-size: 26px;
+    color: #003c46;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 15px;
+}
+
+
+
+/* -------------------------------------------------- */
+/*  DASHBOARD CARD DESIGN (pregătit pentru viitor)     */
+/* -------------------------------------------------- */
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-title {
+    font-size: 16px;
+    color: #003c46;
+    opacity: 0.8;
+}
+
+.card-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #05b9a1;
+}
+
+
+
+/* -------------------------------------------------- */
+/* HEADER PREMIUM                                      */
+/* -------------------------------------------------- */
+
+.top-header {
+    height: 90px;
+    background: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    position: fixed;
+    top: 0;
+    left: 250px;  /* lățimea sidebarului */
+    width: calc(100% - 250px);
+    z-index: 50;
+}
+
+
+.amc-main {
+    margin-left: 250px; /* cât sidebar-ul */
+    margin-top: 90px;   /* înălțimea headerului */
+}
+
+
+.top-header {
+    
+}
+
+
+/* LEFT SIDE */
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    font-size: 26px;
+    color: #003c46;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.welcome-text {
+    font-size: 15px;
+    color: #05b9a1;
+    margin-top: 3px;
+}
+
+/* RIGHT SIDE */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.date-box {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+/* USER BOX */
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.user-box:hover {
+    background: rgba(5,185,161,0.15);
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #05b9a1;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user-role {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* -------------------------------------------------- */
+/* THEME TOGGLE BUTTON                                 */
+/* -------------------------------------------------- */
+
+.theme-toggle {
+    font-size: 22px;
+    background: #e0e0e0;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.theme-toggle:hover {
+    background: #cccccc;
+}
+
+body.dark .theme-toggle {
+    background: #005960;
+}
+
+body.dark .theme-toggle:hover {
+    background: #00747f;
+}
+
+#themeIcon {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+body.dark #themeIcon {
+    transform: rotate(180deg);
+}
+
+/* -------------------------------------------------- */
+/* DARK MODE                                           */
+/* -------------------------------------------------- */
+
+body.dark {
+    background: #111;
+    color: #f0f0f0;
+}
+
+/* Header */
+body.dark .top-header {
+    background: #1a1a1a;
+    border-bottom-color: #333;
+}
+body.dark .page-title {
+    color: #05b9a1;
+}
+body.dark .welcome-text {
+    color: #58e6d1;
+}
+
+body.dark .date-box {
+    color: #cccccc;
+}
+
+/* User box */
+body.dark .user-box:hover {
+    background: rgba(5,185,161,0.25);
+}
+body.dark .user-info .user-name {
+    color: #fff;
+}
+body.dark .user-info .user-role {
+    color: #ccc;
+}
+
+body.dark .avatar {
+    border-color: #06d0bb;
+}
+
+
+
+
+/* FIX THEME TOGGLE LOOK */
+.theme-toggle {
+    font-size: 22px;
+    background: rgba(0,0,0,0.05);
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    user-select: none;
+}
+
+.theme-toggle:hover {
+    background: rgba(0,0,0,0.10);
+}
+
+body.dark .theme-toggle {
+    background: rgba(255,255,255,0.15);
+}
+
+body.dark .theme-toggle:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+#themeIcon {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+
+/* ========================================================= */
+/*         DARK MODE SUPER PREMIUM – GLOBAL                  */
+/* ========================================================= */
+
+body.dark {
+    background: #0d0f10;
+    color: #e8e8e8;
+    transition: background 0.4s ease, color 0.3s ease;
+}
+
+/* Smooth transition for ALL elements */
+body.dark *, body * {
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* ========================================================= */
+/*         SIDEBAR DARK                                      */
+/* ========================================================= */
+
+body.dark .sidebar {
+    background: linear-gradient(180deg, #00171c, #002930);
+    box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+}
+
+body.dark .sidebar-logo h2 {
+    color: #06e0c8;
+}
+
+body.dark .sidebar-menu li a {
+    color: #cfcfcf;
+}
+
+body.dark .sidebar-menu li a:hover {
+    background: rgba(255,255,255,0.07);
+    color: #ffffff;
+}
+
+body.dark .sidebar-menu li a.active {
+    background: rgba(5,185,161,0.35);
+    border-left-color: #06e0c8;
+    color: #ffffff;
+}
+
+/* ========================================================= */
+/*         HEADER DARK                                        */
+/* ========================================================= */
+
+body.dark .top-header {
+    background: #141718;
+    border-bottom: 1px solid #1f2324;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.4);
+}
+
+body.dark .page-title {
+    color: #06e0c8;
+}
+
+body.dark .welcome-text {
+    color: #12a994;
+}
+
+body.dark .date-box {
+    color: #aaaaaa;
+}
+
+/* User Box */
+body.dark .user-box:hover {
+    background: rgba(5,185,161,0.20);
+}
+
+body.dark .user-name {
+    color: #fff;
+}
+
+body.dark .user-role {
+    color: #b5b5b5;
+}
+
+/* Avatar */
+body.dark .avatar {
+    border-color: #06e0c8;
+}
+
+/* Theme Toggle */
+body.dark .theme-toggle {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ========================================================= */
+/*         CARDS DARK                                        */
+/* ========================================================= */
+
+body.dark .card {
+    background: #181b1c;
+    color: #eaeaea;
+    border: 1px solid #2b2f31;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+}
+
+body.dark .dash-card {
+    background: #181b1c;
+    color: #eaeaea;
+    border: 1px solid #2b2f31;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+}
+
+body.dark .card-title {
+    color: #cfcfcf;
+}
+
+body.dark .card-number {
+    color: #06e0c8;
+}
+
+/* ========================================================= */
+/*         BUTTONS DARK                                      */
+/* ========================================================= */
+
+body.dark .btn,
+body.dark button {
+    background: #0f5f57;
+    color: white;
+    border: 1px solid #0c4a44;
+}
+
+body.dark .btn:hover,
+body.dark button:hover {
+    background: #0b423d;
+}
+
+/* Red buttons */
+body.dark .btn-danger {
+    background: #912d2d;
+    border-color: #7a2424;
+}
+
+body.dark .btn-danger:hover {
+    background: #7a2424;
+}
+
+/* ========================================================= */
+/*         INPUTS DARK                                       */
+/* ========================================================= */
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background: #121415;
+    color: #e8e8e8;
+    border: 1px solid #2d3133;
+}
+
+body.dark input:focus,
+body.dark select:focus,
+body.dark textarea:focus {
+    border-color: #06e0c8;
+    background: #181a1b;
+}
+
+/* ========================================================= */
+/*         TABLE DARK                                        */
+/* ========================================================= */
+
+body.dark table {
+    background: #141617;
+    color: #e8e8e8;
+    border-color: #262a2b;
+}
+
+body.dark table tr:nth-child(even) {
+    background: #191b1c;
+}
+
+body.dark table tr:hover {
+    background: rgba(6,224,200,0.15);
+}
+
+body.dark table th {
+    background: #1c1f20;
+    color: #06e0c8;
+    border-bottom: 2px solid #2b2e2f;
+}
+
+body.dark table td {
+    border-bottom: 1px solid #262a2b;
+}
+
+/* ========================================================= */
+/*         MODALS DARK                                       */
+/* ========================================================= */
+
+body.dark .modal-content {
+    background: #161819;
+    border: 1px solid #2b2f31;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+body.dark .modal-header,
+body.dark .modal-footer {
+    background: #141718;
+    border-color: #202426;
+}
+
+body.dark .modal-title {
+    color: #06e0c8;
+}
+
+/* ========================================================= */
+/*         SCROLLBAR DARK                                    */
+/* ========================================================= */
+
+body.dark::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark::-webkit-scrollbar-track {
+    background: #111;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+    background: #06e0c8;
+    border-radius: 5px;
+}
+
+/* ========================================================= */
+/*         GENERAL LINKS                                     */
+/* ========================================================= */
+
+body.dark a {
+    color: #06e0c8;
+}
+
+body.dark a:hover {
+    color: #17f0d8;
+}
+
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* -------------------------------------------------- */
+/*  DOCTORS PAGE                                      */
+/* -------------------------------------------------- */
+
+.doctors-page {
+    padding: 25px 30px 40px;
+}
+
+.doctors-header h2 {
+    font-size: 28px;
+    color: #003c46;
+    margin-bottom: 4px;
+}
+
+.doctors-header .subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.cards-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.cards-row .card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px 24px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.card-overview {
+    flex: 2;
+    background: linear-gradient(135deg, #00796b, #00bfa6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-overview h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.overview-number {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.overview-text {
+    margin-top: 6px;
+    opacity: 0.9;
+}
+
+.card-search {
+    flex: 1.4;
+    width: 100%;
+}
+
+.card-search h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.8fr;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.search-form .form-group label {
+    font-size: 13px;
+    margin-bottom: 4px;
+    display: block;
+    color: #555;
+}
+
+.search-form input,
+.search-form select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid #d0d4dc;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+    border-color: #00bfa6;
+}
+
+.btn {
+    border: none;
+    border-radius: 999px;
+    padding: 9px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-apply {
+    background: #00c853;
+    color: #fff;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-apply:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.35);
+}
+
+.doctors-list-card {
+    margin-top: 10px;
+    padding: 20px 22px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+.card-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card-header-row h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-add {
+    background: #ffffff;
+    border: 2px solid #333;
+    border-radius: 999px;
+    padding: 7px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #f4f4f4;
+}
+
+/* TABLE */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.doctors-table thead {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.doctors-table th,
+.doctors-table td {
+    padding: 10px 6px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.doctors-table th {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #777;
+}
+
+.doctors-table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.doctors-table tbody tr:hover {
+    background: #f0f9f9;
+}
+
+.doctors-table .no-data {
+    text-align: center;
+    padding: 16px;
+    color: #999;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.link-btn.edit-btn {
+    color: #1976d2;
+}
+
+.link-btn.delete-btn {
+    color: #e53235;
+}
+
+/* ALERT BOXES */
+.alert {
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+
+
+.alert-success {
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+/* MODAL */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-box {
+    width: 720px;
+    max-width: 95%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    padding: 18px 22px 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    color: #003c46;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-form .form-group {
+    margin-bottom: 12px;
+}
+
+.modal-form label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.modal-form input,
+.modal-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d0d4dc;
+    padding: 8px 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+    border-color: #00bfa6;
+}
+
+.modal-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.modal-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-primary {
+    background: #00796b;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-danger {
+    background: #e53935;
+    color: #fff;
+}
+
+/* CONFIRM DELETE */
+
+.confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.confirm-overlay.show {
+    display: flex;
+}
+
+.confirm-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px 22px;
+    width: 360px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.confirm-box h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+.confirm-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+.doctors-list-card {
+    width: 100% !important;
+    flex: 1 1 100%;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.cards-row {
+    width: 100%;
+}
+
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    width: 100% !important;
+}
+
+.card-overview {
+    flex: 1; /* înainte era flex:2, flex:1 e suficient */
+    min-width: 320px;
+    background: linear-gradient(135deg, #00796b, #00bfa6) !important;
+    color: #fff !important;
+}
+
+
+.card-search {
+    flex: 1;
+    min-width: 320px;
+}
+
+
+.doctors-list-card {
+    flex-basis: 100% !important;
+    width: 100% !important;
+}
+
+
+/* NURSES PAGE – CARD OVERVIEW ALBASTRU */
+.nurses-page .card-overview {
+    background: linear-gradient(135deg, #01579b, #0288d1) !important;
+    color: #fff !important;
+}
+
+
+/* Face cardul de listă FULL width real */
+.doctors-list-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important; 
+}
+
+/* Tabelul are voie să micșoreze textul fără scroll */
+.doctors-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+/* CONTACT = coloana 6 → se poate rupe pe mai multe linii */
+.doctors-table th:nth-child(6),
+.doctors-table td:nth-child(6) {
+    white-space: normal !important;
+    word-break: break-word !important;
+    max-width: 260px;       /* ajustează după cum îți place */
+}
+
+/* ACTIONS = coloana 7 → lățime fixă, centrat */
+.doctors-table th:nth-child(7),
+.doctors-table td:nth-child(7) {
+    width: 110px;           /* sau 100 / 120 etc. */
+    white-space: nowrap;
+    text-align: center;
+}
+
+.doctors-table th,
+.doctors-table td {
+    padding: 8px 6px;   /* înainte era 10px 6px */
+}
+
+
+.top-header {
+    padding-bottom: 20px !important;
+}
+
+.content-box {
+    padding-top: 20px !important;
+}
+.page-title {
+    margin-bottom: 6px !important;
+}
+
+.main-content {
+    padding-top: 90px !important;
+}
+
+
+
+
+/* PATIENTS PAGE – CARD OVERVIEW ROZ */
+.patients-page .card-overview {
+    background: linear-gradient(135deg, #ff4081, #ff6e40) !important;
+    color: #fff !important;
+}
+
+
+/* FIX pentru tabelul de pacienți */
+
+/* Face tabelul stabil */
+.patients-page .doctors-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+/* Coloane mici = ocupă mai puțin */
+.patients-page .doctors-table th:nth-child(4), /* gender */
+.patients-page .doctors-table td:nth-child(4),
+.patients-page .doctors-table th:nth-child(5), /* status */
+.patients-page .doctors-table td:nth-child(5) {
+    width: 80px !important;
+    text-align: center !important;
+}
+
+/* Coloane mari = pot face wrap */
+.patients-page .doctors-table th:nth-child(6), /* visit reason */
+.patients-page .doctors-table td:nth-child(6),
+.patients-page .doctors-table th:nth-child(7), /* diagnostic */
+.patients-page .doctors-table td:nth-child(7),
+.patients-page .doctors-table th:nth-child(8), /* contact */
+.patients-page .doctors-table td:nth-child(8) {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Numele + Doctor = la fel wrap frumos */
+.patients-page .doctors-table td {
+    vertical-align: middle !important;
+}
+
+
+td:contains("Nediagnosticat") {
+    color: #888;
+    font-style: italic;
+}
+
+
+/* APPOINTMENTS PAGE – CARD OVERVIEW MOV */
+.appointments-page .card-overview {
+    background: linear-gradient(135deg, #7b1fa2, #9c27b0) !important;
+    color: #fff !important;
+}
+
+/* Tabel appointments – text lung în REASON și PAYMENT să nu se suprapună */
+.appointments-page .doctors-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.appointments-page .doctors-table th:nth-child(7),
+.appointments-page .doctors-table td:nth-child(7),
+.appointments-page .doctors-table th:nth-child(8),
+.appointments-page .doctors-table td:nth-child(8) {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+/* -------------------------------------------------- */
+/*     FIX & IMPROVE APPOINTMENT MODAL UI            */
+/* -------------------------------------------------- */
+
+.large-modal {
+    max-width: 900px !important;
+    width: 90%;
+    border-radius: 14px;
+    padding: 25px 30px !important;
+}
+
+/* SPAȚIU ÎNTRE ELEMENTE */
+.modal-form .form-group {
+    margin-bottom: 18px;
+}
+
+/* LABEL MAI MIC, INPUT MAI CLAR */
+.modal-form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+.modal-form input:focus,
+.modal-form select:focus,
+.modal-form textarea:focus {
+    border-color: #00a884;
+    box-shadow: 0 0 0 2px rgba(0,168,132,.15);
+    outline: none;
+}
+
+/* ROW ÎMBUNĂTĂȚIT */
+.modal-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* CÂMPURI WIDE CARE TREBUIE PE 2 SAU 3 COLUMNE */
+.form-group.full {
+    grid-column: 1 / 4;
+}
+
+/* REASON & PAYMENT SECTIUNI PE LĂȚIMEA COMPLETĂ */
+#reason {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.section-title {
+    margin: 20px 0 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border-left: 4px solid #00a884;
+    padding-left: 8px;
+    color: #333;
+}
+
+/* CASH + CHANGE LAYOUT */
+.modal-row.cash-row {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* FOOTER BUTTONS */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    gap: 12px;
+}
+
+.modal-footer .btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* HEADER SPACING */
+.modal-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.modal-box {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+/* Schedules overview – mov */
+.schedules-page .card-overview {
+    background: linear-gradient(135deg, #3949ab, #5c6bc0) !important;
+    color: #fff !important;
+}
+
+.schedules-page .doctors-table {
+    table-layout: fixed;
+    width: 100%;
+}
+.schedules-page .doctors-table th:nth-child(3),
+.schedules-page .doctors-table td:nth-child(3) {
+    white-space: nowrap;
+}
+
+/* Checkbox zile */
+.days-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 6px;
+}
+.day-check-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+.help-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+}
+
+
+/* Accounts overview cards */
+.accounts-page .card-admin {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: #fff;
+}
+.accounts-page .card-staff {
+    background: linear-gradient(135deg, #00897b, #26a69a);
+    color: #fff;
+}
+.accounts-page .card-admin .overview-number,
+.accounts-page .card-staff .overview-number {
+    color: #fff;
+}
+
+
+
+/* Fix for accounts table overlapping */
+.accounts-page table.doctors-table th,
+.accounts-page table.doctors-table td {
+    white-space: nowrap;
+}
+
+.accounts-page table.doctors-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+
+
+/* TODAY */
+.card-overview.payments-today {
+    background: linear-gradient(135deg, #ff9500, #ff3b30) !important;
+    color: #fff !important;
+}
+
+/* MONTH */
+.card-overview.payments-month {
+    background: linear-gradient(135deg, #007aff, #5e5ce6) !important;
+    color: #fff !important;
+}
+
+/* YEAR */
+.card-overview.payment-year {
+    background: linear-gradient(135deg, #34c759, #30b0c7) !important;
+    color: #fff !important;
+}
+
+
+/* ================================ */
+/*   FIX LAYOUT DOCTORS TABLE       */
+/* ================================ */
+
+.doctors-page table.doctors-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* 1: NAME */
+.doctors-page table.doctors-table th:nth-child(1),
+.doctors-page table.doctors-table td:nth-child(1) {
+    width: 120px;
+    white-space: nowrap;
+}
+
+/* 2: SPECIALIZATION */
+.doctors-page table.doctors-table th:nth-child(2),
+.doctors-page table.doctors-table td:nth-child(2) {
+    width: 130px;
+    white-space: nowrap;
+}
+
+/* 3: EXPERIENCE */
+.doctors-page table.doctors-table th:nth-child(3),
+.doctors-page table.doctors-table td:nth-child(3) {
+    width: 80px;
+    white-space: nowrap;
+    text-align:left;
+}
+
+/* 4: SALARY */
+.doctors-page table.doctors-table th:nth-child(4),
+.doctors-page table.doctors-table td:nth-child(4) {
+    width: 70px;
+    white-space: nowrap;
+}
+
+/* 5: PATIENTS */
+.doctors-page table.doctors-table th:nth-child(5) ,
+.doctors-page table.doctors-table td:nth-child(5) {
+    width: 90px;
+    text-align:center;
+    white-space: nowrap;
+}
+
+/* 6: CONTACT → SE RUPE PE LINII */
+.doctors-page table.doctors-table th:nth-child(6),
+.doctors-page table.doctors-table td:nth-child(6) {
+    width: 280px;
+    white-space: normal !important;
+    word-break: break-word;
+}
+
+/* 7: ACTIONS → FIX */
+.doctors-page table.doctors-table th:nth-child(7),
+.doctors-page table.doctors-table td:nth-child(7) {
+    width: 110px;
+    white-space: nowrap;
+    text-align:center;
+}
+
+
+/* ===== NURSES TABLE COLUMNS ===== */
+.nurses-page table.doctors-table {
+    width: 100%;
+    table-layout: fixed;      /* opțional, ca să respecte mai bine width-urile */
+}
+
+/* 1: NAME */
+.nurses-page table.doctors-table th:nth-child(1),
+.nurses-page table.doctors-table td:nth-child(1) {
+    width: 140px;
+}
+
+/* 2: ASSIGNED DOCTOR */
+.nurses-page table.doctors-table th:nth-child(2),
+.nurses-page table.doctors-table td:nth-child(2) {
+    width: 150px;
+}
+
+/* 3: SHIFT */
+.nurses-page table.doctors-table th:nth-child(3),
+.nurses-page table.doctors-table td:nth-child(3) {
+    width: 110px;
+}
+
+/* 4: EXPERIENCE */
+.nurses-page table.doctors-table th:nth-child(4),
+.nurses-page table.doctors-table td:nth-child(4) {
+    width: 110px;
+}
+
+/* 5: QUALIFICATION */
+.nurses-page table.doctors-table th:nth-child(5),
+.nurses-page table.doctors-table td:nth-child(5) {
+    width: 135px;
+}
+
+/* 6: SALARY */
+.nurses-page table.doctors-table th:nth-child(6),
+.nurses-page table.doctors-table td:nth-child(6) {
+    width: 80px;
+}
+
+/* 7: CONTACT */
+.nurses-page table.doctors-table th:nth-child(7),
+.nurses-page table.doctors-table td:nth-child(7) {
+    width: 220px;
+}
+
+/* 8: ACTIONS */
+.nurses-page table.doctors-table th:nth-child(8),
+.nurses-page table.doctors-table td:nth-child(8) {
+    width: 100px;
+}
+
+
+
+
+
+
+
+/* WIDTH pentru coloanele din Patients list */
+.patients-page table.doctors-table th:nth-child(1) { width: 170px; }  /* NAME */
+.patients-page table.doctors-table th:nth-child(2) { width: 150px; }  /* DOCTOR */
+.patients-page table.doctors-table th:nth-child(3) { width: 90px; }  /* BIRTH DATE */
+.patients-page table.doctors-table th:nth-child(4) { width: 80px; }   /* GENDER */
+.patients-page table.doctors-table th:nth-child(5) { width: 110px; }  /* STATUS */
+.patients-page table.doctors-table th:nth-child(6) { width: 140px; }  /* VISIT REASON */
+.patients-page table.doctors-table th:nth-child(7) { width: 190px; }  /* DIAGNOSTIC */
+.patients-page table.doctors-table th:nth-child(8) { width: 150px; }  /* CONTACT */
+.patients-page table.doctors-table th:nth-child(9) { width: 110px; }  /* ACTIONS */
+
+/* ========= APPOINTMENTS TABLE WIDTHS ========= */
+.appointments-page table.doctors-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* 1: PATIENT */
+.appointments-page table.doctors-table th:nth-child(1),
+.appointments-page table.doctors-table td:nth-child(1) {
+    width: 160px;
+    white-space: nowrap;
+}
+
+/* 2: DOCTOR */
+.appointments-page table.doctors-table th:nth-child(2),
+.appointments-page table.doctors-table td:nth-child(2) {
+    width: 160px;
+    white-space: nowrap;
+}
+
+/* 3: DATE & TIME */
+.appointments-page table.doctors-table th:nth-child(3),
+.appointments-page table.doctors-table td:nth-child(3) {
+    width: 140px;
+    white-space: nowrap;
+}
+
+/* 4: DURATION */
+.appointments-page table.doctors-table th:nth-child(4),
+.appointments-page table.doctors-table td:nth-child(4) {
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* 5: STATUS */
+.appointments-page table.doctors-table th:nth-child(5),
+.appointments-page table.doctors-table td:nth-child(5) {
+    width: 120px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* 6: REASON */
+.appointments-page table.doctors-table th:nth-child(6),
+.appointments-page table.doctors-table td:nth-child(6) {
+    width: 200px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+/* 7: PAYMENT */
+.appointments-page table.doctors-table th:nth-child(7),
+.appointments-page table.doctors-table td:nth-child(7) {
+    width: 180px;
+    white-space: nowrap;
+}
+
+/* 8: ACTIONS */
+.appointments-page table.doctors-table th:nth-child(8),
+.appointments-page table.doctors-table td:nth-child(8) {
+    width: 110px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+
+/* ----------------------------------------- */
+/* DASHBOARD WOW PREMIUM                     */
+/* ----------------------------------------- */
+
+.content-box.dashboard-page {
+    padding: 25px 32px 40px;
+    min-height: calc(100vh - 90px);
+}
+
+.dash-header-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003c46;
+    margin-bottom: 4px;
+}
+
+.dash-header-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+/* TOP STAT CARDS */
+.dash-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 18px;
+}
+
+.dash-stat-card {
+    border-radius: 18px;
+    padding: 18px 22px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 110px;
+}
+
+.dash-stat-label {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dash-stat-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.dash-stat-value {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.dash-stat-bottom {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.dash-badge-change {
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.20);
+    font-weight: 600;
+}
+
+.dash-badge-change span {
+    font-size: 11px;
+}
+
+.dash-small-text {
+    opacity: 0.9;
+}
+
+.stat-patients {
+    background: linear-gradient(135deg, #00897b, #26a69a);
+}
+.stat-appointments {
+    background: linear-gradient(135deg,#ff2f6d,#ff6a8d);
+}
+.stat-doctors {
+    background: linear-gradient(135deg,#7647ff,#9d6bff);
+}
+.stat-revenue {
+    background: linear-gradient(135deg,#ffb020,#ffcb4c);
+}
+
+/* MAIN ROW */
+.dash-main-row {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
+    gap: 22px;
+}
+
+.dash-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.dash-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #003c46;
+    margin-bottom: 14px;
+}
+
+/* QUICK ACTIONS */
+.qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.qa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.qa-btn-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qa-icon-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.qa-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    opacity: 0.96;
+}
+
+.qa-add-patient   { background: #00bfa6; }
+.qa-add-appoint   { background: #ff2f6d; }
+.qa-medical-report{ background: #7647ff; }
+.qa-view-doctors  { background: #ffb020; }
+
+.qa-chevron {
+    font-size: 16px;
+}
+
+/* RECENT APPOINTMENTS */
+.recent-list {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recent-item {
+    background: #f8f9ff;
+    border-radius: 14px;
+    padding: 10px 14px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.recent-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: #e3e6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #4a3fd9;
+    font-weight: 600;
+}
+
+.recent-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.recent-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #12212f;
+}
+
+.recent-doctor {
+    font-size: 12px;
+    color: #6c7a89;
+}
+
+.recent-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.recent-time {
+    font-size: 14px;
+    font-weight: 600;
+    color: #003c46;
+}
+
+.status-pill {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.status-confirmed { background: #e1f8e9; color:#1b9a4a; }
+.status-pending   { background: #fff4d9; color:#c19119; }
+.status-cancelled { background: #ffe3e3; color:#d64545; }
+.status-noshow    { background: #f3e6ff; color:#7a3bbf; }
+
+.recent-empty {
+    font-size: 13px;
+    color: #777;
+    margin-top: 4px;
+}
+
+
+
+/* ============================================================
+   DARK MODE – EXACT CUM AI CERUT
+   ============================================================ */
+
+/* FUNDAL GENERAL */
+body.dark-theme .content-box.dashboard-page {
+    background: #000000 !important;
+}
+body.dark-theme .main-content {
+    background: #000000 !important;
+}
+
+/* TITLU & SUBTITLU */
+body.dark-theme .dash-header-title {
+    color: #00ffbb !important;  /* verde aprins */
+}
+body.dark-theme .dash-header-subtitle {
+    color: #63ffd4 !important;  /* verde deschis */
+}
+
+/* CARDURI QUICK ACTIONS + RECENT APPOINTMENTS */
+body.dark-theme .dash-card {
+    background: #0d0d0d !important;
+    border: 1px solid #1e1e1e !important;
+    color: #f2f2f2 !important;
+}
+
+/* TITLURILE CARDURILOR */
+body.dark-theme .dash-card h3 {
+    color: #00ffbb !important;
+}
+
+/* FIECARE RECENT APPOINTMENT */
+body.dark-theme .recent-item {
+    background: #141414 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.dark-theme .recent-name {
+    color: #fafafa !important;
+}
+
+body.dark-theme .recent-doctor {
+    color: #bbbbbb !important;
+}
+
+body.dark-theme .recent-time {
+    color: #63ffd4 !important;
+}
+
+/* AVATAR */
+body.dark-theme .recent-avatar {
+    background: #002d33 !important;
+    color: #63ffd4 !important;
+}
+
+/* HEADER */
+body.dark-theme .top-header {
+    background: #080808 !important;
+    color: #f0f0f0 !important;
+}
+
+/* SIDEBAR */
+body.dark-theme .sidebar {
+    background: #001e22 !important;
+}
+body.dark-theme .sidebar a {
+    color: #cafff5 !important;
+}
+
+
+
+@media (max-width: 1100px) {
+    .dash-stat-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .dash-main-row {
+        grid-template-columns: minmax(0,1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .dash-stat-grid {
+        grid-template-columns: minmax(0,1fr);
+    }
+}
+
+
+
+/* ===================================================== */
+/*         UNIVERSAL DARK MODE AMC CLINIC                */
+/* ===================================================== */
+
+/* FUNDAL */
+body.dark {
+    background: #0d0f10 !important;
+    color: #e8e8e8 !important;
+}
+
+/* HEADER */
+body.dark .top-header {
+    background: #111314 !important;
+    border-bottom: 1px solid #1e1e1e !important;
+}
+
+/* SIDEBAR */
+body.dark .sidebar {
+    background: #001e22 !important;
+}
+body.dark .sidebar-menu li a {
+    color: #d9ffff !important;
+}
+body.dark .sidebar-menu li a.active {
+    background: rgba(5,185,161,0.35) !important;
+}
+
+/* CARDURI PE TOATE PAGINILE */
+body.dark .card,
+body.dark .card-overview,
+body.dark .card-search,
+body.dark .doctors-list-card,
+body.dark .dash-card,
+body.dark .appointments-card,
+body.dark .patients-card {
+    background: #151718 !important;
+    color: #e5e5e5 !important;
+    border: 1px solid #2c3133 !important;
+}
+
+/* TITLURI UNIVERSALE */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark .page-title,
+body.dark .subtitle {
+    color: #e6e6e6 !important;
+}
+
+/* INPUTS */
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background: #121415 !important;
+    color: #e6e6e6 !important;
+    border: 1px solid #2d3133 !important;
+}
+
+/* TABELE UNIVERSALE */
+body.dark table {
+    background: #181b1c !important;
+    color: #e8e8e8 !important;
+}
+body.dark table th {
+    background: #101112 !important;
+    color: #06e0c8 !important;
+}
+body.dark table tr:nth-child(even) {
+    background: #1f2122 !important;
+}
+body.dark table tr:hover {
+    background: #252829 !important;
+}
