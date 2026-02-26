@@ -693,7 +693,7 @@ if (isset($_GET["msg"])) {
 <div class="confirm-overlay" id="deleteConfirm">
     <div class="confirm-box">
         <h3>Delete nurse</h3>
-        <p>Are you sure you want to delete this nurse? This action cannot be undone.</p>
+        <p>Are you sure you want to delete this nurse? This action cannot be undone!</p>
         <div class="confirm-buttons">
             <button type="button" class="btn btn-secondary" id="cancelDelete">Cancel</button>
             <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Yes, delete</button>
